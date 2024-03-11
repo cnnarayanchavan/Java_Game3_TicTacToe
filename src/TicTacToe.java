@@ -39,7 +39,8 @@ public class TicTacToe extends JFrame
 
 
     //for adding textpanel to the frame window of game--------------------------------------
-    frame.add(textPanel);
+    //frame.add(textPanel);  // this refledts the game label in center of board so , to make room for our game window we have shift label to up
+      frame.add(textPanle, BorderLayout.NORTH);
 
  }
 }
