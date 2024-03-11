@@ -46,8 +46,8 @@ public class TicTacToe extends JFrame
 
 
   // making the actual wondow for game with grid lines
-  boardPanel.setLayout(new GridLayour(3,3));
-  boardPanel.setBackground(Color.darkGrey);
+  boardPanel.setLayout(new GridLayout(3,3));
+  boardPanel.setBackground(Color.darkGray);
   frame.add(boardPanel);
   
 
