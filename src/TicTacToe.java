@@ -14,6 +14,8 @@ public class TicTacToe extends JFrame
  
  JPanel textPanel = new JPanel();   //for text panel of game
 
+ JPanel boardPanel = new JPanel();   //for boadrpanel of game
+
 
  TicTacToe(){
     //adding game frame (window) --------------------------------------------------------
@@ -41,6 +43,13 @@ public class TicTacToe extends JFrame
     //for adding textpanel to the frame window of game--------------------------------------
     //frame.add(textPanel);  // this refledts the game label in center of board so , to make room for our game window we have shift label to up
       frame.add(textPanel, BorderLayout.NORTH);
+
+
+  // making the actual wondow for game with grid lines
+  boardPanel.setLayout(new GridLayour(3,3));
+  boardPanel.setBackground(Color.darkGrey);
+  frame.add(boardPanel);
+  
 
  }
 }
