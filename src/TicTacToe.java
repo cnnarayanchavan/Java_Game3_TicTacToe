@@ -8,7 +8,7 @@ public class TicTacToe extends JFrame
  int BoardWidth=600;
  int BoardHeight=650;
 
- JFrame frame = new JFrame();       //for game window 
+ JFrame frame = new JFrame("Tic-Tac-Toe");       //for game window 
  
  JLabel textLabel = new JLabel();   //for textLabel of game
  
