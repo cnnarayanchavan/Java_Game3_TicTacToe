@@ -56,6 +56,11 @@ public class TicTacToe extends JFrame
   boardPanel.setLayout(new GridLayout(3,3));
   boardPanel.setBackground(Color.darkGray);
   frame.add(boardPanel);
+
+
+  //Adding defined buttons into the game frame 
+
+  
   
 
  }
