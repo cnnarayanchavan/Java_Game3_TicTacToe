@@ -68,7 +68,7 @@ public class TicTacToe extends JFrame {
 
         // adding the color into buttons tile and text on buttons 
         tile.setBackground(Color.darkGray);
-        tile.setforeground(Color.pink);
+        tile.setForeground(Color.pink);
         tile.setFont(new Font("Arial", Font.BOLD, 120 ));
         
       }
