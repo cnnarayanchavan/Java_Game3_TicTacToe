@@ -59,13 +59,14 @@ public class TicTacToe extends JFrame
 
 
   //Adding defined buttons into the game frame 
-for()int  r=0 ; r<3; r++){   //Rows for game
+for(int  r=0 ; r<3; r++){   //Rows for game
  for(int c=0; c<3; c++){     //Cols for game
   JButton tile = new JButton();
   board[r][c]=tile;
   boardPanel.add(tile);
  }
 }
- }
+  
+}
 }
 
