@@ -16,6 +16,10 @@ public class TicTacToe extends JFrame
 
  JPanel boardPanel = new JPanel();   //for boadrpanel of game
 
+ JButton[][] board = new JButton[3][3];  //buttins for board of window 
+ 
+ 
+
 
  TicTacToe(){
     //adding game frame (window) --------------------------------------------------------
