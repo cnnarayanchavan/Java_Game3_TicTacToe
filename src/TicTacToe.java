@@ -66,9 +66,6 @@ for()int  r=0 ; r<3; r++){   //Rows for game
   boardPanel.add(tile);
  }
 }
-  
-  
-
  }
 }
 
