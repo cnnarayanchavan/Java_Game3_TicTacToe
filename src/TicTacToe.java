@@ -82,7 +82,7 @@ public class TicTacToe extends JFrame {
             tile.setText(cuuPlayer);
 
             //now fro printing "O" player we use condition 
-            cuuPlayer = cuuPlayer == PlayeX ? PlayerO : PLayerX;
+            cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerX;
             //need to change the text label too as per X and O turn 
             textLabel.setText(cuuPlayer + " 's turn");
           }
