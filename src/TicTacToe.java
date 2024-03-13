@@ -17,7 +17,7 @@ public class TicTacToe extends JFrame {
 
  JButton[][] board = new JButton[3][3];  //buttins for board of window 
  String PlayerX ="X";
- String PlayerY="Y";
+ String PlayerO="O";
  String cuuPlayer = PlayerX;
  
  
@@ -80,6 +80,11 @@ public class TicTacToe extends JFrame {
           public void actionPerformed(ActionEvent e){
             JButton tile = (JButton) e.getSource();   //need to cast type to JButton.
             tile.setText(cuuPlayer);
+
+            //now fro printing "O" player we use condition 
+            cuuPlayer = cuuPlayer == PlayeX ? PlayerO : PLayerX;
+            //need to change the text label too as per X and O turn 
+            textLabel.setText(cuuPlayer + " 's turn");
           }
         });
         
