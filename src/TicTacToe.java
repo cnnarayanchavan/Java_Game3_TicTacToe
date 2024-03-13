@@ -78,7 +78,7 @@ public class TicTacToe extends JFrame {
 
         tile.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e){
-            JButton tile = (JButton) g.setSource();   //need to cast type to JButton.
+            JButton tile = (JButton) e.setSource();   //need to cast type to JButton.
             tile.setText(cuuPlayer);
           }
         });
