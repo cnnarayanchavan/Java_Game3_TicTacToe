@@ -70,6 +70,7 @@ public class TicTacToe extends JFrame {
         tile.setBackground(Color.darkGray);
         tile.setForeground(Color.red);
         tile.setFont(new Font("Arial", Font.BOLD, 120 ));
+        tile.setFocusable(false);
         
       }
     }         
