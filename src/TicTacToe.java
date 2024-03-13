@@ -71,7 +71,17 @@ public class TicTacToe extends JFrame {
         tile.setForeground(Color.red);
         tile.setFont(new Font("Arial", Font.BOLD, 120 ));
         tile.setFocusable(false);
-        tile.setText(cuuPlayer);
+        //tile.setText(cuuPlayer);
+
+
+        //noe to make buttons on tiles respnsible we have to add action listener
+
+        tile.addActionListener(new ActionListerner(){
+          public vodi actionPerformed(ActionEvent e){
+            JButton tile = (JButton) g.setSource();   //need to cast type to JButton.
+            tile.setText(cuuPlayer);
+          }
+        });
         
         
       }
