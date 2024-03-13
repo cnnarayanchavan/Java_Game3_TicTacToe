@@ -79,12 +79,14 @@ public class TicTacToe extends JFrame {
         tile.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e){
             JButton tile = (JButton) e.getSource();   //need to cast type to JButton.
-            tile.setText(cuuPlayer);
-
-            //now fro printing "O" player we use condition 
+            if(cuuPlayer == " "){                      //only if the current player is empty then it will assign text as "X"
+              tile.setText(cuuPlayer);                   //as the first player of game always start from "X" strimg i set the cuuPlayer to "X"
+              //now fro printing "O" player we use condition 
             cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerX;
             //need to change the text label too as per X and O turn 
             textLabel.setText(cuuPlayer + " 's turn");
+            //but here we are overriting the tile text...so for thet we need a condition here 
+            }
           }
         });
         
