@@ -102,10 +102,8 @@ public class TicTacToe extends JFrame {
   {
     //Horizontal 
     for (int r = 0; r < 3; r++) {
-      if(board[r][0].getText()==" ") 
-      {
-          continue;
-      }
+      if(board[r][0].getText()==" ") continue;
+      
       if(board[r][0].getText()==board[r][1].getText()   &&
         board[r][1].getText()==board[r][2].getText())
       {
