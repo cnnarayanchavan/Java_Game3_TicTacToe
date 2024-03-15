@@ -80,34 +80,40 @@ public class TicTacToe extends JFrame {
 
         tile.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e){
-            if(gameOver){
-              return;
-            }
+            if(gameOver) return;
             JButton tile = (JButton) e.getSource();   //need to cast type to JButton.
-            if(tile.getText() == " "){                      //only if the current player is empty then it will assign text as "X"
-              tile.setText(cuuPlayer);                   //as the first player of game always start from "X" strimg i set the cuuPlayer to "X"
-              checkWinner();   
-            //now fro printing "O" player we use condition 
-              if(!gameOver)
-              {
-                  cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerX;
-                //need to change the text label too as per X and O turn 
-                textLabel.setText(cuuPlayer + " 's turn");
-                //but here we are overriting the tile text...so for thet we need a condition here 
-                  
-              }
-            
-            }
+
+            if (tile.getText() == "") {                    //only if the current player is empty then it will assign text as "X"
+              tile.setText(cuuPlayer);                           //as the first player of game always start from "X" strimg i set the cuuPlayer to "X"
+              //turns++;
+              //checkWinner();
+              // if (!gameOver) {
+                  cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerO;
+                  //need to change the text label too as per X and O turn 
+                  textLabel.setText(cuuPlayer + "'s turn.");
+              //}
           }
-        });
-        
-        
+            }
+          });
       }
     }         
   }   
-  void checkWinner(){
-    
-  }
+//   void checkWinner()
+//   {
+//     //Horizontal 
+//     for (int r = 0; r < 3; r++) {
+//       if(board[r][0].getText()==" ") 
+//       {
+//           continue;
+//       }
+//       if(board[r][0].getText()==board[r][1].getText()   &&
+//         board[r][1].getText()==board[r][2].getText())
+//       {
+//         gameOver = true;
+//         return;
+//       }
+//     }  
+//   }
 }
 
 
