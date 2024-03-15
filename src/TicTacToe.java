@@ -86,34 +86,34 @@ public class TicTacToe extends JFrame {
             if (tile.getText() == "") {                    //only if the current player is empty then it will assign text as "X"
               tile.setText(cuuPlayer);                           //as the first player of game always start from "X" strimg i set the cuuPlayer to "X"
               //turns++;
-              //checkWinner();
-              // if (!gameOver) {
+              checkWinner();
+               if (!gameOver) {
                   cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerO;
                   //need to change the text label too as per X and O turn 
                   textLabel.setText(cuuPlayer + "'s turn.");
-              //}
+              }
           }
             }
           });
       }
     }         
   }   
-//   void checkWinner()
-//   {
-//     //Horizontal 
-//     for (int r = 0; r < 3; r++) {
-//       if(board[r][0].getText()==" ") 
-//       {
-//           continue;
-//       }
-//       if(board[r][0].getText()==board[r][1].getText()   &&
-//         board[r][1].getText()==board[r][2].getText())
-//       {
-//         gameOver = true;
-//         return;
-//       }
-//     }  
-//   }
+  void checkWinner()
+  {
+    //Horizontal 
+    for (int r = 0; r < 3; r++) {
+      if(board[r][0].getText()==" ") 
+      {
+          continue;
+      }
+      if(board[r][0].getText()==board[r][1].getText()   &&
+        board[r][1].getText()==board[r][2].getText())
+      {
+        gameOver = true;
+        return;
+      }
+    }  
+  }
 }
 
 
