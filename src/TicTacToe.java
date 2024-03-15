@@ -20,7 +20,7 @@ public class TicTacToe extends JFrame {
  String PlayerO="O";
  String cuuPlayer = PlayerX;
 
- Booolean gameOver = false;          //Game over condition 
+ boolean gameOver = false;          //Game over condition 
  
  
 
