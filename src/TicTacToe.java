@@ -122,7 +122,7 @@ public class TicTacToe extends JFrame {
       if(board[0][c].getText() == "") continue;
       
       if(board[0][c].getText() == board[1][c].getText() &&
-        board[0][c].getText() == board[1][c].getText()) {
+        board[1][c].getText() == board[2][c].getText()) {
         for(int i=0; i<3; i++){
           setWinner(board[i][i]);
         }
