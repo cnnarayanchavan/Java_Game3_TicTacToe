@@ -109,11 +109,20 @@ public class TicTacToe extends JFrame {
       if(board[r][0].getText()==board[r][1].getText()   &&
         board[r][1].getText()==board[r][2].getText())
       {
+        for(int i = 0; i<3; i++){
+          setWinner(board[r][i])
+        }
         gameOver = true;
         return;
       }
     }  
   }
+    // defining color for winners  
+    void setWinner(JButton tile){
+      tile.setForeground(Color.orange);
+      tile.setBackground(Color.gray);
+      textLabel.setText(cuuPlayer + " is the winner!");
+    }
 }
 
 
