@@ -115,7 +115,7 @@ public class TicTacToe extends JFrame {
         gameOver = true;
         return;
       }
-    } 
+    }  
 
     //now for checking vertical condition 
     for(int c = 0; c<3; c++){
@@ -139,5 +139,5 @@ public class TicTacToe extends JFrame {
       textLabel.setText(cuuPlayer + " is the winner!");
     }
 }
-
+  
 
