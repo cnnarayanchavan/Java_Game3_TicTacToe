@@ -120,7 +120,7 @@ public class TicTacToe extends JFrame {
     // defining color for winners  
     void setWinner(JButton tile){
       tile.setForeground(Color.green);
-      tile.setBackground(Color.red);
+      tile.setBackground(Color.white);
       textLabel.setText(cuuPlayer + " is the winner!");
     }
 }
