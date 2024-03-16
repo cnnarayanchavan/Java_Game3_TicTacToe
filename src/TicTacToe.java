@@ -79,13 +79,17 @@ public class TicTacToe extends JFrame {
         //noe to make buttons on tiles respnsible we have to add action listener
 
         tile.addActionListener(new ActionListener(){
-          public void actionPerformed(ActionEvent e){
+          public void actionPerformed(ActionEvent e)
+          {
             JButton tile = (JButton) e.getSource();  
-              tile.setText(cuuPlayer);                         
+            if(tile.getText() == " ")
+            {
+               tile.setText(cuuPlayer);                         
                cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerX;
-                // //need to change the text label too as per X and O turn 
-                 textLabel.setText(cuuPlayer + "'s turn.");
-          }
+               //need to change the text label too as per X and O turn 
+               textLabel.setText(cuuPlayer + "'s turn.");
+            }            
+           }
         });
       }
     }         
