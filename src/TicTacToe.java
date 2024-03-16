@@ -82,7 +82,7 @@ public class TicTacToe extends JFrame {
           public void actionPerformed(ActionEvent e)
           {
             JButton tile = (JButton) e.getSource();  
-            if(tile.getText() == " ")
+            if (tile.getText() == "")
             {
                tile.setText(cuuPlayer);                         
                cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerX;
