@@ -81,20 +81,26 @@ public class TicTacToe extends JFrame {
         tile.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e)
           {
+            if (gameOver) return ;
             JButton tile = (JButton) e.getSource();  
             if (tile.getText() == "")
             {
-               tile.setText(cuuPlayer);                         
-               cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerX;
-               //need to change the text label too as per X and O turn 
-               textLabel.setText(cuuPlayer + "'s turn.");
+               tile.setText(cuuPlayer);  
+              checkWinner();
+              if (!gameOver)
+              {
+                cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerX;
+                //need to change the text label too as per X and O turn 
+                textLabel.setText(cuuPlayer + "'s turn.");
+              }
+              
             }            
            }
         });
       }
     }         
   }   
-  void checkWinner()
+  void checkWinner()  //first winning condition 
   {
     //Horizontal 
     for (int r = 0; r < 3; r++) {
