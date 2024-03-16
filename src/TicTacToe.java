@@ -91,10 +91,10 @@ public class TicTacToe extends JFrame {
                   cuuPlayer = cuuPlayer == PlayerX ? PlayerO : PlayerO;
                   //need to change the text label too as per X and O turn 
                   textLabel.setText(cuuPlayer + "'s turn.");
-              }
+             }
+           } 
           }
-            }
-          });
+        });
       }
     }         
   }   
