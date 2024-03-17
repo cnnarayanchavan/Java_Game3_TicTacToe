@@ -38,7 +38,7 @@ public class TicTacToe extends JFrame {
 
     //for addinf text to the game wondow -------------------------------------------------
     textLabel.setBackground(Color.darkGray);
-    textLabel.setForeground(Color.white);
+    textLabel.setForeground(Color.pink);
     textLabel.setFont(new Font("Arial", Font.BOLD, 50));
     textLabel.setHorizontalAlignment(JLabel.CENTER);
     textLabel.setText("Tic-Tac-Toe");
