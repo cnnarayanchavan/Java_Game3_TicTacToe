@@ -21,6 +21,7 @@ public class TicTacToe extends JFrame {
  String cuuPlayer = PlayerX;
 
  boolean gameOver = false;          //Game over condition 
+ int truns = 0;
  
  
 
@@ -86,6 +87,7 @@ public class TicTacToe extends JFrame {
             if (tile.getText() == "")
             {
                tile.setText(cuuPlayer);  
+              turns++;
               checkWinner();
               if (!gameOver)
               {
@@ -158,6 +160,17 @@ public class TicTacToe extends JFrame {
       gameOver = true; 
       return;
     }
+    if(turns = 9)
+    {
+      for(int r=0; r<3; r++)
+      {
+        for(int c =0 ; c<3; c++)
+        {
+          setTie(board[r][c])
+        }
+      }
+      gameOver = true;
+    }
   }
     // defining color for winners (green and gray)  
     void setWinner(JButton tile){
@@ -165,6 +178,7 @@ public class TicTacToe extends JFrame {
       tile.setBackground(Color.gray);
       textLabel.setText(cuuPlayer + " is the winner!");
     }
+  
 }
   
 
