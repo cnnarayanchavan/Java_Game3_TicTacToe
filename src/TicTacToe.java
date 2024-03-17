@@ -21,7 +21,7 @@ public class TicTacToe extends JFrame {
  String cuuPlayer = PlayerX;
 
  boolean gameOver = false;          //Game over condition 
- int truns = 0;
+ int turns = 0;
  
  
 
@@ -166,7 +166,7 @@ public class TicTacToe extends JFrame {
       {
         for(int c =0 ; c<3; c++)
         {
-          setTie(board[r][c])
+          setTie(board[r][c]);
         }
       }
       gameOver = true;
