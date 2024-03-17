@@ -160,7 +160,7 @@ public class TicTacToe extends JFrame {
       gameOver = true; 
       return;
     }
-    if(turns = 9)
+    if(turns == 9)
     {
       for(int r=0; r<3; r++)
       {
