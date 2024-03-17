@@ -155,7 +155,8 @@ public class TicTacToe extends JFrame {
       setWinner(board[0][2]);
       setWinner(board[1][1]);
       setWinner(board[2][0]);
-      gameOver = true return;
+      gameOver = true; 
+      return;
     }
   }
     // defining color for winners (green and gray)  
